@@ -1,0 +1,24 @@
+/nimcache
+
+# Executables shall be put in an ignored build/ directory
+/build
+
+# Nimble packages
+/vendor/.nimble
+
+# ntags/ctags output
+/tags
+
+# Ignore dynamic, static libs and libtool archive files
+*.so
+*.dylib
+*.a
+*.la
+*.exe
+*.dll
+
+VMTests.md
+/debug*.json
+/block*.json
+
+/SPesa
