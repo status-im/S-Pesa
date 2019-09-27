@@ -15,7 +15,7 @@ Smart Pesa is a USSD/SMS Interface to Smart Contracts, #defi & Decentralised App
   - [Requirements](#requirements)
 - [Contribute](#contribute)
   - [As a community](#as-a-community)
-- [Contribute as a developer](#contribute-as-a-developer)
+  - [As a developer](#as-a-developer)
 - [Principles, vision, goals](#principles-vision-goals)
   - [Principles](#principles)
   - [Vision](#vision)
@@ -49,7 +49,7 @@ Unlike Status, S-Pesa is not a decentralised client, and therefore be understood
 
 ### Where does this tool come from?
 
-S-Pesa comes from a want to help create popup micro-economies and help lift people out of poverty, and hopefully help these communities to adopt  
+S-Pesa comes from a want to help create popup micro-economies and help lift people out of poverty, and hopefully help these communities to adopt Blockchain-enabled technologies.
 
 ## Get started
 
@@ -71,7 +71,7 @@ Do you want to help? That's awesome. Here are simple things you can do.
 * Unlike Fight Club, the best way to help is **to actually talk about the project** as much as you can (blog post, articles, Twitter, Facebook).
 * You can answer questions in [the issue tracker](https://github.com/status-im/SPesa/issues) to help other community members.
 
-## Contribute as a developer
+### As a developer
 
 * Read our [Contribution Guide](/CONTRIBUTING.md).
 * Install the developer version locally so you can start contributing [instructions](/docs/contribute/index.md).
