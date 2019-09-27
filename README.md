@@ -1,7 +1,7 @@
 <!-- <p align="center"><img src="https://raw.githubusercontent.com/status-im/spesa/master/docs/spesa.png"></p> -->
 <h1 align="center">S-PESA</h1>
 <h2 align="center">Smart Pesa - a USSD/SMS Interface to Smart Contracts, #defi & Decentralised Applications.</h2>
-<h3>(A Status Client for Feature Phones)</h3>
+<h3 align="center">(A Status Client for Feature Phones)</h3>
 
 Smart Pesa is a USSD/SMS Interface to Smart Contracts, #defi & Decentralised Applications
 
