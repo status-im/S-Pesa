@@ -7,6 +7,9 @@ from sequtils import mapIt
 # TODO: array access menu system
 # TODO: pin-based registration system (key gen and encrypt with truncated hash of phone number and pin?)
 # TODO: PoC Send/Receive
+# TODO: MPESA Integration https://developer.safaricom.co.ke/docs#command-ids
+# TODO: How to handle addresses that don't have pphone numers, make addresses first class citizen, with phone numbers attached (and have labelling)
+
 
 # http://blog.microsave.net/2015/09/15/designing-an-effective-user-interface-for-ussd-part2/
 # "Geography" specific main menu
@@ -28,7 +31,6 @@ from sequtils import mapIt
 # text
 # String 	This shows the user input. It is an empty string in the first notification of a session. After that, it concatenates all the user input within the session with a * until the session ends.
 
-
 # var
 #   menu =  { 0: "Send Money",
 #             1: "Withdraw Cash",
@@ -39,6 +41,7 @@ from sequtils import mapIt
 # #   TODO
 
 proc onRequest(req: Request): Future[void] =
+  # TODO: Decouple Request Handling from endpoint interface
   if req.httpMethod == some(HttpPost):
     let
       uri = parseUri(req.body.get())
@@ -48,5 +51,5 @@ proc onRequest(req: Request): Future[void] =
     req.send(Http404)
 
 when isMainModule:
-  run(onRequest)
+  run(onRequest, Settings(port: Port(8080), bindAddr: ""))
 

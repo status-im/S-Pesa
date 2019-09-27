@@ -1,5 +1,5 @@
 <!-- <p align="center"><img src="https://raw.githubusercontent.com/status-im/spesa/master/docs/spesa.png"></p> -->
-<h1 align="center">S-PESA</h1>
+<h1 align="center">S-Pesa</h1>
 <h2 align="center">Smart Pesa - a USSD/SMS Interface to Smart Contracts, #defi & Decentralised Applications.</h2>
 <h3 align="center">(A Status Client for Feature Phones)</h3>
 
@@ -9,7 +9,7 @@ Smart Pesa is a USSD/SMS Interface to Smart Contracts, #defi & Decentralised App
   - [Purpose](#purpose)
   - [Features](#features)
   - [Who is it for?](#who-is-it-for)
-  - [What S-PESA isn't](#what-s-pesa-isnt)
+  - [What S-Pesa isn't](#what-s-pesa-isnt)
   - [Where does this tool come from?](#where-does-this-tool-come-from)
 - [Get started](#get-started)
   - [Requirements](#requirements)
@@ -33,27 +33,31 @@ To allow coordination of source code and binary releases among a group of actors
 
 ### Features
 
-  - TODO
+  - Key Management
+  - Multi-account Wallet
+  - Access Smart Contract ABI
+  - M-PESA Integration
+  - DApplet Registry
 
 ### Who is it for?
 
-TODO
+Anyone with a connection to a mobile network, predominantly focusing on those with feature phones in underserviced areas.
 
-### What S-PESA isn't
+### What S-Pesa isn't
 
-  - TODO
+Unlike Status, S-Pesa is not a decentralised client, and therefore be understood as a trusted gateway to decentralised technologies that also does key management.
 
 ### Where does this tool come from?
 
-TODO
+S-Pesa comes from a want to help create popup micro-economies and help lift people out of poverty, and hopefully help these communities to adopt  
 
 ## Get started
 
-`nimble build`
+`nimble build && ./SPesa`
 
 ### Requirements
 
-- Nim 0.19 or above
+- Nim 0.20.2 or above
 - Git
 - An Ethereum Node
 - Redis Server
@@ -65,15 +69,15 @@ Do you want to help? That's awesome. Here are simple things you can do.
 ### As a community
 
 * Unlike Fight Club, the best way to help is **to actually talk about the project** as much as you can (blog post, articles, Twitter, Facebook).
-* You can answer questions in [the issue tracker](https://github.com/status-im/S-PESA/issues) to help other community members.
+* You can answer questions in [the issue tracker](https://github.com/status-im/SPesa/issues) to help other community members.
 
 ## Contribute as a developer
 
 * Read our [Contribution Guide](/CONTRIBUTING.md).
 * Install the developer version locally so you can start contributing [instructions](/docs/contribute/index.md).
-* Look for [issues labelled bugs](https://github.com/status-im/S-PESA/issues?q=is%3Aopen+is%3Aissue+label%3Abug) if you are looking to have an immediate impact on the project.
-* Look for [issues labelled Help wanted](https://github.com/status-im/S-PESA/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) These are issues that you can solve relatively easily.
-* Look for [issues labelled Good first issue](https://github.com/status-im/S-PESA/labels/good%20first%20issue) These issues are for people who want to contribute, but try to work on a small feature first.
+* Look for [issues labelled bugs](https://github.com/status-im/SPesa/issues?q=is%3Aopen+is%3Aissue+label%3Abug) if you are looking to have an immediate impact on the project.
+* Look for [issues labelled Help wanted](https://github.com/status-im/SPesa/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) These are issues that you can solve relatively easily.
+* Look for [issues labelled Good first issue](https://github.com/status-im/SPesa/labels/good%20first%20issue) These issues are for people who want to contribute, but try to work on a small feature first.
 * If you are an advanced developer, you can try to tackle [issues labelled feature requests](https://github.com/status-im/SPesa/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22). Beware though - they are harder to do and will require a lot of back and forth with the repository administrator in order to make sure we are going to the right direction with the product.
 
 We welcome contributions of all kinds from anyone.
@@ -99,14 +103,20 @@ You can read [Status' Principles here](https://our.status.im/our-principles/).
 
 ### Vision
 
-S-PESA's vision is **TODO**.
+S-Pesa's vision is to provide people access to decentralised technologies as far as mobile networks reach, and connect them to the global (financial) markets
 
 ### Goals
 
 - TODO
 
 ### Todo
-- TODO
+- handle USSD HTTP POST
+- menu system
+- pin-based registration system (key gen and encrypt with truncated hash of phone number and pin?)
+- PoC Send/Receive
+- MPESA Integration https://developer.safaricom.co.ke/docs#command-ids
+- How to handle addresses that don't have pphone numers, make addresses first class citizen, with phone numbers attached (and have labelling)
+
 
 ## License
 
