@@ -46,6 +46,8 @@ proc onRequest(req: Request): Future[void] =
     let
       uri = parseUri(req.body.get())
       params = uri.query.split('&').mapIt($(it.split('=')))
+    echo(req.body.get().split('&').mapIt($(it.split('='))))
+    echo(params)
     req.send("Hello")
   else:
     req.send(Http404)

@@ -20,7 +20,7 @@ Smart Pesa is a USSD/SMS Interface to Smart Contracts, #defi & Decentralised App
   - [Principles](#principles)
   - [Vision](#vision)
   - [Goals](#goals)
-  - [Todo](#todo)
+  - [TODO](#todo)
 - [License](#license)
 
 ## Introduction
@@ -29,7 +29,7 @@ TODO
 
 ### Purpose
 
-To allow coordination of source code and binary releases among a group of actors you don't know. 
+To connect & enable anyone connected to a mobile network accesss to Smart Contracts, #defi & Decentralised Applications.
 
 ### Features
 
@@ -109,7 +109,7 @@ S-Pesa's vision is to provide people access to decentralised technologies as far
 
 - TODO
 
-### Todo
+### TODO
 - handle USSD HTTP POST
 - menu system
 - pin-based registration system (key gen and encrypt with truncated hash of phone number and pin?)
